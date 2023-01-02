@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    letter-spacing: 0.9px;
+}
+body{
+    background-color: rgb(20, 20, 238);
+}
+.parent{
+    width:85%;
+    height: 94vh;
+    margin-left:7.5%;
+    margin-top: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.texts{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 9px;
+}
+.regText{
+    font-size: 25px;
+    font-weight: 900;
+}
+.pdText{
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.9;
+    position: absolute;
+    top:90px;
+}
+.children{
+    height: 80px;
+    width: 30%;
+    margin: 10px;
+}
+.child1,.child2{
+    height:35vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.identityText{
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-left: 3%;
+    margin-top: 5px;
+}
+label{
+    font-size: 18px;
+    font-weight: 600;
+}
+input,select{
+    margin-top: 8px;
+    height: 40px;
+    width: 90%;
+    border: 2px solid rgb(180, 179, 179);
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    background-color: rgb(231, 231, 240);
+}
+input:hover{
+    background-color: rgb(212, 214, 236);
+ 
+}
+input[type="submit"]{
+    height: 65px;
+    width: 27%;
+    background-color: rgb(27, 27, 235);
+    color: white;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: rgb(3, 3, 246);
+}

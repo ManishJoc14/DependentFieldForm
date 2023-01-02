@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dependent Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dependentForm.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="texts">
+        <p class="regText">Registration</p>
+        <p class="pdText">Personal Details</p>
+    </div>
+        <div class="child1">
+           <div class="children">
+            <label for="Fname">  Full Name </label><br>
+            <input type="text" name="Fname"placeholder="  Enter your name" required>
+           </div>
+           <div class="children">
+            <label for="bdate">  Date of Birth </label><br>
+            <input type="date" name="bdate"placeholder="  Enter Birth date" required>
+           </div>
+           <div class="children">
+            <label for="email">  Email </label><br>
+            <input type="email" name="email"placeholder="  Enter your email" required>
+           </div>
+           <div class="children">
+            <label for="mobNum">  Mobile number </label><br>
+            <input type="tel" name="mobNum" pattern="[9]{1}[8]{1}[0-9]{8}" required placeholder="  Enter mobile number">
+           </div>
+           <div class="children">
+            <label for="gender">  Gender </label><br>
+           <select name="gender" id="gender"required>
+            <option value="">Choose gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+           </select>
+           </div>
+           <div class="children">
+            <label for="occupation">  Occupation </label><br>
+            <input type="text" name="occupation"placeholder="  Enter Occupation" required>
+           </div>
+        </div>
+        <p class="identityText">Identity Details</p>
+        <div class="child2">
+            <div class="children">
+                <label for="idtype"> ID Type </label><br>
+                <input type="text" name="idtype"placeholder="  Enter ID type" required>
+            </div>
+           <div class="children">
+            <label for="idnum"> ID Number </label><br>
+            <input type="number" name="idnum"placeholder="  Enter Id number" required>
+           </div>
+           <div class="children">
+             <label for="issueDate"> Issue Date  </label><br>
+               <input type="date" name="issueDate"placeholder="  Enter Issue date" required>
+           </div>
+           <div class="children">
+            <label for="epiryDate"> Expiry Date </label><br>
+            <input type="date" name="epiryDate"placeholder="  Enter Expiry date" required>
+        </div>
+           <div class="children">
+             <label for="issueDistrict">  Issue District </label><br>
+              <select name="issueDistrict" id="issueDistrict">
+                <option value="">Select District</option>
+                <option value="D1">D1</option>
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+              </select>
+           </div>
+           <div class="children">
+             <label for="issueMunicipality">  Issue Municipality </label><br>
+             <select name="issueMunicipality" id="issueMunicipality"></select>
+           </div>
+        </div>
+        <input type="submit" value="Submit">
+    </div>
+    <script src="dependentform.js"></script>
+</body>
+</html>
